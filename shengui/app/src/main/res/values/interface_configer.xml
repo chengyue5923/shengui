@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="url">
+        [
+         { id:1,
+           showToast:false,
+           type:map,
+           action:api?message?yapull,
+           timeout:10000,
+           method:0,
+           cach:false,
+           https:false,
+           header:true,
+           needLogin:true,
+           showLoadDialog:false,
+           showNotify:false,
+           nofity:{
+            id:1,
+            name:消息轮询
+           }
+         },
+        {  id:2,
+           showToast:false,
+           type:data,
+           action:api?message?publish,
+           timeout:10000,
+           method:1,
+           cach:false,
+           https:false,
+           header:true,
+           needLogin:true,
+           showLoadDialog:false,
+           showNotify:false,
+           nofity:{
+            id:2,
+            name:发送消息
+           }
+         },
+        { id:3,
+           showToast:false,
+           type:message,
+           action:api?message?audioContent,
+           timeout:10000,
+           method:0,
+           cach:false,
+           https:false,
+           header:true,
+           needLogin:true,
+           showLoadDialog:false,
+           showNotify:false,
+           nofity:{
+            id:3,
+            name:获取语音内容
+           }
+         }
+        ,
+        { id:4,
+           showToast:false,
+           type:message,
+           action:api?message?audioContent,
+           timeout:10000,
+           method:0,
+           cach:false,
+           https:false,
+           header:true,
+           needLogin:true,
+           showLoadDialog:false,
+           showNotify:false,
+           nofity:{
+            id:4,
+            name:发帖子
+           }
+         }
+        ]
+    </string>
+</resources>

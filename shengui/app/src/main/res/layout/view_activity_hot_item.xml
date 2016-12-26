@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginLeft="@dimen/tenDp"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/tenDp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/images"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/default_pictures" />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/images"
+                    android:layout_marginTop="@dimen/tenDp"
+                    android:gravity="center_horizontal"
+                    android:text="金钱龟"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+        </LinearLayout>
+</RelativeLayout>

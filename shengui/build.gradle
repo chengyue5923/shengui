@@ -1,0 +1,63 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.2'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+ext {
+    //SDK相关参数
+    compileSdkVersion = 24
+    buildToolsVersion = "24.0.0"
+    minSdkVersion = 14
+    targetSdkVersion = 24
+    //APP版本相关参数
+    versionCode = 130
+    versionName = "1.30"
+
+    //签名相关参数
+//    gradleFilePath = "/Users/fuwen/Downloads/fuhuasihang.jks"
+//    storePassword = "foriseassets2016"
+//    keyAlias = "fuhuasihang"
+//    keyPassword = "foriseassets2016"
+
+    gradleFilePath = "hasoffer_android_key.jks"
+    storePassword = "hasoffer"
+    keyAlias = "hasoffer"
+    keyPassword = "hasoffer"
+
+
+//    //生产
+    ONLINE_APP_URL = 'http://gui.ideathink.com.cn/'
+    ONLINE_PIC_URL = 'http://gui.ideathink.com.cn/'
+    DEBUG_APP_URL = 'http://gui.ideathink.com.cn/'
+    DEBUG_PIC_URL = 'http://gui.ideathink.com.cn/'
+
+    //开发
+//    ONLINE_APP_URL = '"http://10.0.181.162:8086/"'
+//    ONLINE_PIC_URL = '"http://10.0.181.162:8086/"'
+//    DEBUG_APP_URL = '"http://10.0.181.162:8086/"'
+//    DEBUG_PIC_URL = '"http://10.0.181.162:8086/"'
+
+
+    //阿里云
+    ALICLOUD_APP_URL = 'http://gui.ideathink.com.cn/'
+    ALICLOUD_PIC_URL = 'http://gui.ideathink.com.cn/'
+
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/tenDp"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_marginTop="@dimen/tenDp"
+        android:layout_marginLeft="@dimen/tenDp"
+        android:id="@+id/productImageView"
+        android:background="@drawable/default_pictures"
+        android:layout_width="100dp"
+        android:layout_height="80dp" />
+    <TextView
+        android:layout_marginRight="@dimen/tenDp"
+        android:textSize="8sp"
+        android:layout_marginTop="13dp"
+        android:id="@+id/priductTimeText"
+        android:layout_alignParentRight="true"
+        android:text="11-21 10:00"
+        android:textColor="@color/producttexts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="@dimen/tenDp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/producttitletexts"
+        android:textSize="14sp"
+        android:text="出售一只越南金钱龟出售一只越南金钱龟"
+        android:layout_marginRight="@dimen/tenDp"
+        android:layout_marginLeft="@dimen/tenDp"
+        android:layout_toLeftOf="@id/priductTimeText"
+        android:layout_toRightOf="@id/productImageView"
+        android:id="@+id/productTitleNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/productBuyText"
+        android:textSize="9sp"
+        android:textColor="@color/white"
+        android:background="@drawable/activity_product_title"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="@dimen/tenDp"
+        android:layout_below="@id/productTitleNameText"
+        android:layout_toRightOf="@id/productImageView"
+        android:text="求购"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/productBuyTypeText"
+        android:textSize="9sp"
+        android:textColor="@color/white"
+        android:background="@drawable/activity_product_type"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_below="@id/productTitleNameText"
+        android:layout_toRightOf="@id/productBuyText"
+        android:text="金钱龟"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/detailTextView"
+        android:ellipsize="end"
+        android:textColor="#9c9c9c"
+        android:textSize="10sp"
+        android:lines="2"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="@dimen/tenDp"
+        android:layout_marginRight="@dimen/tenDp"
+        android:layout_toRightOf="@id/productImageView"
+        android:text="可以走平台担保支付，有意请联系，谢谢！可以走平台担保支付，有意请联系，谢谢！"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productBuyText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/productImageView" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/tenDp"
+        android:layout_marginBottom="@dimen/tenDp"
+        android:text="以龟会友"
+        android:textSize="11sp"
+        android:textColor="#393939"
+        android:layout_marginTop="@dimen/tenDp"
+        android:layout_below="@id/productImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+       />
+    <TextView
+        android:textColor="#393939"
+        android:text="12345678912"
+        android:textSize="11sp"
+        android:layout_marginTop="@dimen/tenDp"
+        android:id="@+id/texttelTextView"
+        android:layout_below="@id/detailTextView"
+        android:layout_alignLeft="@id/detailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginRight="@dimen/tenDp"
+        android:layout_marginBottom="@dimen/tenDp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/tenDp"
+        android:layout_below="@id/detailTextView"
+        android:id="@+id/textAddressText"
+        android:text="呼和浩特市"
+        android:textSize="11sp"
+        android:textColor="#393939"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

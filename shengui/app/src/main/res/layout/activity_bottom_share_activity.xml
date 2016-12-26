@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="260dp"
+    android:layout_height="match_parent"
+    tools:context="com.shengui.app.android.shengui.MainActivity">
+
+ <TextView
+     android:id="@+id/zhidingText"
+     android:background="@color/white"
+     android:textColor="#333333"
+     android:textSize="14sp"
+     android:text="置顶"
+     android:gravity="center"
+     android:layout_centerHorizontal="true"
+     android:layout_width="match_parent"
+     android:layout_height="35dp" />
+ <View
+     android:background="@color/bottomlineColor"
+     android:layout_width="match_parent"
+     android:layout_height="1sp"/>
+ <TextView
+     android:id="@+id/settingText"
+     android:background="@color/white"
+     android:textColor="#333333"
+     android:textSize="14sp"
+     android:text="设为精华"
+     android:gravity="center"
+     android:layout_centerHorizontal="true"
+     android:layout_width="match_parent"
+     android:layout_height="35dp" />
+ <View
+     android:background="@color/bottomlineColor"
+     android:layout_width="match_parent"
+     android:layout_height="1sp"/>
+ <TextView
+     android:id="@+id/removeText"
+     android:background="@color/white"
+     android:textColor="#333333"
+     android:textSize="14sp"
+     android:text="移动到"
+     android:gravity="center"
+     android:layout_centerHorizontal="true"
+     android:layout_width="match_parent"
+     android:layout_height="35dp" />
+ <View
+     android:background="@color/bottomlineColor"
+     android:layout_width="match_parent"
+     android:layout_height="1sp"/>
+
+
+
+   <TextView
+       android:id="@+id/collectionText"
+       android:background="@color/white"
+       android:textColor="#333333"
+       android:textSize="14sp"
+       android:text="收藏"
+       android:gravity="center"
+       android:layout_centerHorizontal="true"
+       android:layout_width="match_parent"
+       android:layout_height="35dp" />
+    <View
+        android:background="@color/bottomlineColor"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"/>
+    <TextView
+        android:id="@+id/sharwTextView"
+        android:background="@color/white"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:text="分享"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+    <View
+        android:background="@color/bottomlineColor"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"/>
+    <TextView
+        android:id="@+id/jubaoText"
+        android:background="@color/white"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:text="举报"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tenDp"/>
+    <TextView
+        android:id="@+id/cancelTextView"
+        android:layout_marginBottom="@dimen/tenDp"
+        android:background="@color/white"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:text="取消"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+</LinearLayout>

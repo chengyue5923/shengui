@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "com.shengui.app.android.shengui"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+    }
+    //执行lint检查，有任何的错误或者警告提示，都会终止构建，我们可以将其关掉。
+    lintOptions {
+        abortOnError false
+    }
+//    buildTypes {
+//        debug {
+//            // 显示Log
+//            buildConfigField "boolean", "LOG_DEBUG", "false"
+//            buildConfigField "String", "APP_PIC_URL", "${rootProject.ext.DEBUG_PIC_URL}"
+//            buildConfigField "String", "APP_URL", "${rootProject.ext.DEBUG_APP_URL}"
+//            versionNameSuffix "-debug"
+//            proguardFiles 'proguard-project-debug.txt'
+//            //是否启用proguard
+//            minifyEnabled false
+//            zipAlignEnabled true
+//            shrinkResources false
+//            signingConfig signingConfigs.debug
+//
+//        }
+//
+//        release {
+//            // 不显示Log
+//            buildConfigField "boolean", "LOG_DEBUG", "true"
+//            buildConfigField "String", "APP_PIC_URL", "${rootProject.ext.ONLINE_PIC_URL}"
+//            buildConfigField "String", "APP_URL", "${rootProject.ext.ONLINE_APP_URL}"
+//            minifyEnabled true
+//            versionNameSuffix ""
+//            //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明
+//            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            proguardFiles 'proguard-project.txt'
+//            //是否启用proguard
+//            minifyEnabled false
+//            //Zipalign优化
+//            zipAlignEnabled true
+//            // 移除无用的resource文件
+//            shrinkResources false
+//            //签名
+//            signingConfig signingConfigs.relealse
+//
+//        }
+//
+//    }
+//    applicationVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            def outputFile = output.outputFile
+//            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+////                def fileName = "fuhua_v${defaultConfig.versionName}_${releaseTime()}_${variant.buildType.name}.apk"
+//                def fileName = "fuhua-v${defaultConfig.versionName}${variant.buildType.versionNameSuffix}.apk"
+//                if (variant.buildType.name == "release") {
+//                    if (outputFile.name.endsWith("unaligned.apk")) {
+//                        output.outputFile = new File(outputFile.parent + "/release/unaligned", fileName)
+//                    } else {
+//                        output.outputFile = new File(outputFile.parent + "/release", fileName)
+//                    }
+//                } else if (variant.buildType.name == "debug") {
+//                    if (outputFile.name.endsWith("unaligned.apk")) {
+//                        output.outputFile = new File(outputFile.parent + "/debug/unaligned", fileName)
+//                    } else {
+//                        output.outputFile = new File(outputFile.parent + "/debug", fileName)
+//                    }
+//                }
+//            }
+//        }
+//    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(path: ':baseview')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:recyclerview-v7:24.0.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.zhy:base-adapter:2.0.0'
+    compile 'com.android.support:cardview-v7:23.0.0'
+    compile files('libs/commons-httpclient-3.1.jar')
+}
